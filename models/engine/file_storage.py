@@ -2,6 +2,7 @@ import json
 """class FileStorage that serializes instances to a
 JSON file and deserializes JSON file to instances"""
 
+
 class FileStorage:
     __file_path = 'file.json'
     __objects = {}
@@ -11,7 +12,7 @@ class FileStorage:
 
     def all(self):
         return FileStorage.__objects
-    
+
     def new(self, obj):
         """
         Add a new object to the FileStorage.
